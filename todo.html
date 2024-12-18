@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todo list</title>
+    <link rel="stylesheet" href="todo.css" />
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.5.2/css/all.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h2>TO DO List</h2>
+        <i class="fa-thin fa-clipboard-list-check fa-xl"></i>
+      </div>
+      <div class="main">
+        <input type="text" id="todoinpt" class="todoinpt" placeholder="title" />
+        <i
+          class="one fa-sharp-duotone fa-light fa-circle-plus fa-2xl"
+          alt="+"
+          id="addlst"
+          onclick="CreateList()"
+        ></i>
+      </div>
+      <h5 id="alert"></h5>
+      <ul id="list" class="list"></ul>
+    </div>
+    <script src="todo.js" type="text/javascript"></script>
+  </body>
+</html>
